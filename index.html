@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<meta name="theme-color" content="#D8403E">
+<title>Grupo VIP • Lojas MR</title>
+<meta name="description" content="Entre no Grupo VIP das Lojas MR e receba promoções exclusivas, cupons e lançamentos em primeira mão direto no seu WhatsApp.">
+
+<!-- Open Graph (aparece bonito quando o link é compartilhado) -->
+<meta property="og:title" content="Grupo VIP • Lojas MR">
+<meta property="og:description" content="Promoções exclusivas, cupons e lançamentos em primeira mão. Só pra quem está no grupo.">
+<meta property="og:type" content="website">
+
+<!-- ============================================================
+     META PIXEL  —  troque SEU_PIXEL_ID abaixo e descomente o bloco
+     ============================================================
+<script>
+  !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+  n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+  document,'script','https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', 'SEU_PIXEL_ID');
+  fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+  src="https://www.facebook.com/tr?id=SEU_PIXEL_ID&ev=PageView&noscript=1"/></noscript>
+============================================================ -->
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;1,800&display=swap" rel="stylesheet">
+
+<style>
+  :root{
+    --red:#D8403E;
+    --red-dark:#B93233;
+    --wa:#25D366;
+    --wa-dark:#1EBE5A;
+    --ink:#161616;
+    --muted:#6b6b6b;
+    --line:#ececec;
+  }
+  *{margin:0;padding:0;box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+  html{-webkit-text-size-adjust:100%}
+  body{
+    font-family:"Poppins",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;
+    color:var(--ink);
+    background:#fff;
+    line-height:1.45;
+    min-height:100dvh;
+    display:flex;
+    flex-direction:column;
+    overflow-x:hidden;
+  }
+
+  /* faixa topo */
+  .topbar{
+    background:var(--ink);color:#fff;text-align:center;
+    font-size:12px;font-weight:600;letter-spacing:.3px;
+    padding:8px 14px;
+  }
+  .topbar b{color:#ffd7d5}
+
+  .wrap{
+    flex:1;
+    width:100%;
+    max-width:480px;
+    margin:0 auto;
+    padding:26px 22px 34px;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    text-align:center;
+  }
+
+  /* logo em CSS (sem imagem externa) */
+  .logo{
+    width:96px;height:96px;border-radius:16px;
+    background:var(--red);
+    display:flex;flex-direction:column;align-items:center;justify-content:center;
+    box-shadow:0 10px 26px rgba(216,64,62,.28);
+    border:3px solid #fff;outline:3px solid var(--red);
+    animation:pop .6s cubic-bezier(.2,.9,.3,1.2) both;
+  }
+  .logo .l1{color:#fff;font-weight:600;font-size:14px;letter-spacing:3px;line-height:1;margin-bottom:2px}
+  .logo .l2{color:#fff;font-weight:800;font-style:italic;font-size:38px;line-height:.9;letter-spacing:-1px}
+
+  .pill{
+    margin-top:20px;
+    display:inline-flex;align-items:center;gap:7px;
+    background:#fdeceb;color:var(--red);
+    font-size:12.5px;font-weight:700;letter-spacing:.4px;text-transform:uppercase;
+    padding:7px 14px;border-radius:999px;
+    animation:fade .6s both .05s;
+  }
+  .pill .dot{width:8px;height:8px;border-radius:50%;background:var(--red);animation:blink 1.4s infinite}
+
+  h1{
+    margin-top:16px;
+    font-size:29px;line-height:1.15;font-weight:800;letter-spacing:-.5px;
+    animation:fade .6s both .1s;
+  }
+  h1 span{color:var(--red)}
+
+  .sub{
+    margin-top:12px;
+    font-size:15.5px;color:var(--muted);max-width:340px;
+    animation:fade .6s both .18s;
+  }
+
+  /* benefícios */
+  .benefits{
+    margin-top:22px;width:100%;
+    display:flex;flex-direction:column;gap:11px;
+    animation:fade .6s both .26s;
+  }
+  .b{
+    display:flex;align-items:center;gap:13px;text-align:left;
+    background:#fafafa;border:1px solid var(--line);border-radius:14px;
+    padding:13px 15px;
+  }
+  .b .emo{
+    flex:none;width:40px;height:40px;border-radius:11px;
+    background:#fdeceb;display:flex;align-items:center;justify-content:center;font-size:20px;
+  }
+  .b p{font-size:14.5px;font-weight:600;line-height:1.3}
+  .b p small{display:block;font-weight:500;color:var(--muted);font-size:12.5px;margin-top:1px}
+
+  /* CTA */
+  .cta{
+    margin-top:26px;width:100%;
+    display:flex;align-items:center;justify-content:center;gap:11px;
+    background:var(--wa);color:#fff;
+    font-size:17px;font-weight:800;letter-spacing:.2px;
+    padding:18px 20px;border-radius:16px;
+    text-decoration:none;
+    box-shadow:0 12px 28px rgba(37,211,102,.38);
+    animation:fade .6s both .34s, pulse 2.6s ease-in-out 1.4s infinite;
+  }
+  .cta:active{transform:scale(.97)}
+  .cta svg{flex:none}
+
+  .reassure{
+    margin-top:14px;font-size:12.5px;color:var(--muted);
+    display:flex;align-items:center;justify-content:center;gap:6px;flex-wrap:wrap;
+    animation:fade .6s both .4s;
+  }
+  .reassure b{color:var(--ink)}
+
+  /* provas / selos */
+  .proofs{
+    margin-top:24px;width:100%;
+    display:flex;justify-content:space-between;gap:8px;
+    border-top:1px solid var(--line);padding-top:18px;
+    animation:fade .6s both .46s;
+  }
+  .proof{flex:1;font-size:11px;font-weight:600;color:var(--ink);line-height:1.3}
+  .proof .ic{font-size:19px;margin-bottom:5px;display:block}
+  .proof small{display:block;color:var(--muted);font-weight:500;font-size:10.5px}
+
+  footer{
+    text-align:center;font-size:11px;color:#9a9a9a;
+    padding:18px;border-top:1px solid var(--line);
+  }
+  footer a{color:var(--red);text-decoration:none;font-weight:600}
+
+  @keyframes fade{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}
+  @keyframes pop{from{opacity:0;transform:scale(.6)}to{opacity:1;transform:none}}
+  @keyframes blink{0%,100%{opacity:1}50%{opacity:.25}}
+  @keyframes pulse{0%,100%{box-shadow:0 12px 28px rgba(37,211,102,.38)}50%{box-shadow:0 12px 40px rgba(37,211,102,.6)}}
+  @media (prefers-reduced-motion:reduce){*{animation:none!important}}
+
+  @media (min-width:420px){
+    h1{font-size:32px}
+  }
+</style>
+</head>
+<body>
+
+  <div class="topbar">🔥 Ofertas do grupo <b>somem rápido</b> — entre antes que acabe</div>
+
+  <main class="wrap">
+
+    <div class="logo" aria-label="Lojas MR">
+      <span class="l1">LOJAS</span>
+      <span class="l2">mr</span>
+    </div>
+
+    <div class="pill"><span class="dot"></span> Grupo VIP no WhatsApp</div>
+
+    <h1>As melhores ofertas das <span>Lojas MR</span> chegam aqui primeiro</h1>
+
+    <p class="sub">Entre no grupo e receba promoções, cupons e lançamentos direto no seu WhatsApp — antes de todo mundo.</p>
+
+    <div class="benefits">
+      <div class="b">
+        <span class="emo">🔥</span>
+        <p>Ofertas relâmpago exclusivas<small>Descontos que só quem está no grupo recebe</small></p>
+      </div>
+      <div class="b">
+        <span class="emo">🎟️</span>
+        <p>Cupons de desconto<small>Códigos VIP pra economizar em qualquer compra</small></p>
+      </div>
+      <div class="b">
+        <span class="emo">👟</span>
+        <p>Lançamentos em primeira mão<small>Veja os novos modelos antes de irem pro site</small></p>
+      </div>
+    </div>
+
+    <a class="cta" id="entrar"
+       href="https://chat.whatsapp.com/EQjPF4h7XJbGkXIgt1IR6a"
+       target="_blank" rel="noopener">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="#fff" xmlns="http://www.w3.org/2000/svg">
+        <path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38a9.9 9.9 0 0 0 4.79 1.22h.01c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2Zm0 18.15c-1.48 0-2.93-.4-4.2-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.23 8.23 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.25-8.24 2.2 0 4.27.86 5.83 2.42a8.19 8.19 0 0 1 2.41 5.83c0 4.54-3.7 8.24-8.25 8.24Zm4.52-6.16c-.25-.12-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.13-.16.25-.64.81-.79.97-.14.17-.29.19-.54.06-.25-.12-1.05-.39-1.99-1.23-.74-.66-1.23-1.47-1.38-1.72-.14-.25-.02-.38.11-.51.11-.11.25-.29.37-.43.13-.14.17-.25.25-.41.08-.17.04-.31-.02-.43-.06-.12-.56-1.35-.77-1.85-.2-.48-.41-.42-.56-.43l-.48-.01c-.17 0-.43.06-.66.31-.22.25-.86.85-.86 2.07 0 1.22.89 2.4 1.01 2.56.12.17 1.75 2.67 4.23 3.74.59.26 1.05.41 1.41.52.59.19 1.13.16 1.56.1.48-.07 1.47-.6 1.68-1.18.21-.58.21-1.07.14-1.18-.06-.1-.22-.16-.47-.28Z"/>
+      </svg>
+      QUERO ENTRAR NO GRUPO VIP
+    </a>
+
+    <p class="reassure">✅ <b>Grátis</b> · Você pode sair quando quiser · Sem spam</p>
+
+    <div class="proofs">
+      <div class="proof"><span class="ic">🚚</span>Frete grátis<small>acima de R$150</small></div>
+      <div class="proof"><span class="ic">💳</span>Até 10x<small>sem juros</small></div>
+      <div class="proof"><span class="ic">🔄</span>Troca<small>fácil</small></div>
+    </div>
+
+  </main>
+
+  <footer>
+    © Lojas MR · <a href="https://lojasmron.com.br" target="_blank" rel="noopener">lojasmron.com.br</a> · Atendimento (49) 99193-7443
+  </footer>
+
+  <script>
+    // Dispara o evento de conversão no clique (Meta Pixel) e segue pro grupo.
+    document.getElementById('entrar').addEventListener('click', function(){
+      try { if (window.fbq) fbq('track', 'Lead'); } catch(e){}
+      // Ex.: TikTok -> if (window.ttq) ttq.track('ClickButton');
+    });
+  </script>
+
+</body>
+</html>
